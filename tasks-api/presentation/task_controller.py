@@ -32,7 +32,7 @@ def task_done(id: str, repo: TaskRepository = Depends(TaskRepository), logged_us
     
 
 @router.put('/{id}/not_done',status_code=status.HTTP_200_OK)
-def task_done(id: str, repo: TaskRepository = Depends(TaskRepository), logged_user: UserRead = Depends(get_logged_user)):
+def task_not_done(id: str, repo: TaskRepository = Depends(TaskRepository), logged_user: UserRead = Depends(get_logged_user)):
     task = repo.get_by_id(id)
 
     if task is not None and task.user_id == logged_user(id):
