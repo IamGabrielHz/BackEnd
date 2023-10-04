@@ -1,4 +1,4 @@
-jose==1.0.0
+python-jose==3.3.0
 annotated-types==0.5.0
 anyio==3.7.1
 click==8.1.7
