@@ -1,5 +1,5 @@
 from fastapi import APIRouter, status, HTTPException, Depends
-from persistence.tasks_models import UserCreate
+from persistence.task_models import UserCreate
 from persistence.auth_repository import AuthRepository
 import infrastructure.hash_provider as hash_provider
 import infrastructure.jwt_provider as jwt_provider
